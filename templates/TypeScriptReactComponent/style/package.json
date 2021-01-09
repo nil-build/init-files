@@ -1,0 +1,6 @@
+{
+  "name": "style",
+  "private": true,
+  "main": "../dist/cjs/style/index.js",
+  "module": "../dist/esm/style/index.js"
+}

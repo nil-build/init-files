@@ -15,7 +15,7 @@ export default async (templatePath: string) => {
     let relationPath = entry.path;
     const file = entry.fullPath;
 
-    if (/dist|node_modules|DS_Store|docs|package\-lock\.json/.test(file)) {
+    if (/dist|node_modules|DS_Store|package\-lock\.json/.test(relationPath)) {
       return;
     }
 

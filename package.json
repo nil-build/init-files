@@ -1,6 +1,6 @@
 {
   "name": "tfes-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "组件库初始化化命令工具",
   "author": "nobo.zhou@foxmail.com",
   "license": "MIT",
@@ -27,16 +27,16 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.3",
-    "chalk": "^4.1.0",
-    "fs-extra": "^9.0.1",
-    "inquirer": "^7.3.3",
     "npm-run-all": "^4.1.5",
-    "readdirp": "^3.5.0",
     "rimraf": "^3.0.2",
     "transform-es": "^5.6.1",
     "typescript": "^4.1.3"
   },
   "dependencies": {
+    "readdirp": "^3.5.0",
+    "inquirer": "^7.3.3",
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
     "@babel/runtime": "^7.11.2",
     "lodash": "^4.17.20"
   },

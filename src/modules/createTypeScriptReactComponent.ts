@@ -19,7 +19,7 @@ export default async (templatePath: string) => {
       return;
     }
 
-    if (relationPath === "package.json") return;
+    if (relationPath === "package.tpl.json") return;
 
     const stats = fs.statSync(file);
 
@@ -41,7 +41,8 @@ export default async (templatePath: string) => {
     };
   }
   // 合并package.json
-  const tmpPkg = require(templatePath + "/package.json");
+  // 模板的不能存在package.json，不然cli发包容易和files冲突，使用.tpl.json代替
+  const tmpPkg = require(templatePath + "/package.tpl.json");
   fs.outputFileSync(
     `${cwd}/package.json`,
     JSON.stringify(

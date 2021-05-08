@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
 		"outDir": "dist/lib",
 		"declaration": true,
 		"module": "esnext",
@@ -22,8 +22,11 @@
     ],
     "paths": {
       "~/*": [
-        "./*"
+        "./src/*"
       ],
+      "@/*": [
+        "./src/*"
+      ]
     }
 	},
 	"include": ["src/**/*", "./typings"]

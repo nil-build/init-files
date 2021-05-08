@@ -15,6 +15,7 @@ module.exports = function () {
           // root: ["./src"], // 仅限./src目录
           alias: {
             "~": "./src",
+            "@": "./src",
           },
         },
       ],
